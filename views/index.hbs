@@ -1,0 +1,14 @@
+<h1>Find Service</h1>
+<p><a href="/auth/login">Login</a> to update your profile</p>
+<p>You have a company , you are a providing a service for clients ? This is the best opportunity to share your service
+  on web by one step create your account now for FREE<a href="/auth/register">Register an account</a></p>
+<h2>Services Companies:</h2>
+
+<ul class="Users">
+  {{#each recent}}
+  <li class="UsersDetails"><a href="/users/{{username}}">Company : {{username}} Service : {{github}}<img src={{url}}>
+      Country:
+      {{facebook}}
+      PhoneNumber:{{ phoneNumber }} Facebook : {{ facebook }}</a></li>
+  {{/each}}
+</ul>
