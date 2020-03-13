@@ -45,12 +45,12 @@ router.post("/", (req, res, next) => {
   }
 
   const users = req.app.locals.users;
-  const { name, github, phoneNumber, url, facebook } = req.body;
+  const { name, github, phoneNumber, url, facebook, country } = req.body;
   const _id = ObjectID(req.session.passport.user);
 
   users.updateOne(
     { _id },
-    { $set: { name, github, phoneNumber, url, facebook } },
+    { $set: { name, github, phoneNumber, url, facebook, country } },
     err => {
       if (err) {
         throw err;

@@ -1,5 +1,6 @@
 {{> messages }}
 {{#if username}}
+<a href="/">Home</a>
 <h2>{{ username }}'s profile</h2>
 <table class="table">
   <tr>
@@ -12,7 +13,11 @@
   </tr>
   <tr>
     <td>Image:</td>
-    <td><img src={{url}}></td>
+    <td><img src={{ url }}></td>
+  </tr>
+  <tr>
+    <td>Country:</td>
+    <td>{{ country }}</td>
   </tr>
   <tr>
     <td>phoneNumber:</td>
